@@ -1,94 +1,91 @@
-
 @font-face {
-    font-family: Mina;
-    src: url('../assets/Mina/Mina-Regular.ttf');
+  font-family: Mina;
+  src: url("../assets/Mina/Mina-Regular.ttf");
 }
 
 input {
-    text-align: left;
-    padding-left:20px;
-  }
-.title{
-    font-family: Mina;
-    margin-bottom: 60px;
-
+  text-align: left;
+  padding-left: 20px;
 }
-.wTitle{
-    font-size: 32px;
-    margin-bottom: 5px;
-    margin-top:80px;
-    padding: 0px;
-    text-shadow: 0px 4px 4px rgba(0,0,0, 0.25);
+.title {
+  font-family: Mina;
+  margin-bottom: 60px;
 }
-.aTitle{
-    
-    font-size: 64px;
-    margin-top:-30px;
-    padding: 0;
-
+.wTitle {
+  font-size: 32px;
+  margin-bottom: 5px;
+  margin-top: 80px;
+  padding: 0px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.fName{
-    border: 1px solid black;
-    margin: 0 auto;
-    border-radius: 15px;
-    width: 275px;
-    height: 45px;
-    margin-bottom: 17px;
-    background-color: #D9D9D9;
-    box-sizing:border-box;
+.aTitle {
+  font-size: 64px;
+  margin-top: -30px;
+  padding: 0;
 }
-.lName{
-    border: 1px solid black;
-    margin: 0 auto;
-    border-radius: 15px;
-    width: 275px;
-    margin-bottom: 17px;
-    margin-top: 17px;
-    height: 45px;
-    background-color: #D9D9D9;
-    box-sizing:border-box;
+.fName {
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 275px;
+  height: 45px;
+  margin-bottom: 17px;
+  background-color: #d9d9d9;
+  box-sizing: border-box;
 }
-.email{
-    border: 1px solid black;
-    margin: 0 auto;
-    border-radius: 15px;
-    width: 275px;
-    height: 45px;
-    margin-bottom: 17px;
-    margin-top: 17px;
-    background-color: #D9D9D9;
-    box-sizing:border-box;
+.lName {
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 275px;
+  margin-bottom: 17px;
+  margin-top: 17px;
+  height: 45px;
+  background-color: #d9d9d9;
+  box-sizing: border-box;
 }
-.regPass{
-    border: 1px solid black;
-    margin: 0 auto;
-    border-radius: 15px;
-    width: 275px;
-    height: 45px;
-    margin-bottom: 17px;
-    margin-top: 17px;
-    background-color: #D9D9D9;
-    box-sizing:border-box;
+.email {
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 275px;
+  height: 45px;
+  margin-bottom: 17px;
+  margin-top: 17px;
+  background-color: #d9d9d9;
+  box-sizing: border-box;
 }
-.confPass{
-    border: 1px solid black;
-    margin: 0 auto;
-    border-radius: 15px;
-    width: 275px;
-    height: 45px;
-    margin-bottom: 17px;
-    background-color: #D9D9D9;
-    margin-top: 17px;
-    box-sizing:border-box;
+.regPass {
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 275px;
+  height: 45px;
+  margin-bottom: 17px;
+  margin-top: 17px;
+  background-color: #d9d9d9;
+  box-sizing: border-box;
 }
-.nextButton{
-    border: 1px solid black;
-    margin: 0 auto;
-    border-radius: 15px;
-    width: 275px;
-    margin-top: 17px;
-    height: 45px;
-    background-color: #878787;
-    text-align: center;
-    vertical-align: middle;
+.confPass {
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 275px;
+  height: 45px;
+  margin-bottom: 17px;
+  background-color: #d9d9d9;
+  margin-top: 17px;
+  box-sizing: border-box;
+}
+.nextButton {
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 275px;
+  margin-top: 17px;
+  height: 45px;
+  background-color: #878787;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 1rem;
 }
