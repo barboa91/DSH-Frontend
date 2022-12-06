@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import DataContext from './components/DataContext';
 import { getUserToken, setUserToken, clearUserToken } from './services/util';
 import axios from 'axios';
+import Register from './components/Register';
 // BrowserRouter as Router,
 
 const DB_URL = "https://dsh-backend.fly.dev"
@@ -58,6 +59,7 @@ function App() {
       setUserToken(user.token);
       setCurrentUser(user.user);
       setIsAuthenicated(user.isLoggedIn);
+      console.log(user)
 
       return user;
     } catch (error) {
@@ -96,6 +98,8 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/main" element={<Login/>}></Route>
+          <Route exact path="/register" element={<Register/>}></Route>
+
 
         </Routes>
       </Router >
