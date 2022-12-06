@@ -1,0 +1,19 @@
+.navbar {
+  /* border: 1px solid red; */
+  position: fixed;
+  bottom: 0;
+  height: 5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: #878787;
+}
+
+.nav-button {
+  width: 55px;
+  height: 55px;
+  font-size: 10px;
+  border-radius: 50%;
+}
