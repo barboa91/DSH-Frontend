@@ -7,6 +7,7 @@ import DataContext from './components/DataContext';
 import { getUserToken, setUserToken, clearUserToken } from './services/util';
 import axios from 'axios';
 import Register from './components/Register';
+import LandingPage from './components/LandingPage';
 // BrowserRouter as Router,
 
 const DB_URL = "https://dsh-backend.fly.dev"
@@ -99,6 +100,7 @@ function App() {
         <Routes>
           <Route exact path="/main" element={<Login/>}></Route>
           <Route exact path="/register" element={<Register/>}></Route>
+          <Route exact path="/landing" element={<LandingPage />}></Route>
 
 
         </Routes>

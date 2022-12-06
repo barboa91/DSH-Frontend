@@ -1,0 +1,24 @@
+
+@font-face {
+    font-family: Mina;
+    src: url('../assets/Mina/Mina-Regular.ttf');
+}
+
+.header-container {
+    height: 62.28px;
+    width: 390px;
+    background-color: #878787;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    margin-left: 1em;
+}
+
+.hamburger {
+    float: right;
+    margin-right: 1em;
+}
