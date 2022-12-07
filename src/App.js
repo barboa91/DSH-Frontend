@@ -7,6 +7,7 @@ import DataContext from './components/DataContext';
 import { getUserToken, setUserToken, clearUserToken } from './services/util';
 import Register from './components/Register';
 import EditSkills from './components/EditSkills';
+import BackgroundInfo from './pages/BackgroundInfo'
 // BrowserRouter as Router,
 
 const DB_URL = "https://dsh-backend.fly.dev"
@@ -100,7 +101,7 @@ function App() {
           <Route exact path="/main" element={<Login/>}></Route>
           <Route exact path="/register" element={<Register/>}></Route>
           <Route exact path="/editskills" element={<EditSkills/>}></Route>
-
+          <Route exact path='/backgroundinfo' element={<BackgroundInfo/>}></Route>
 
 
         </Routes>

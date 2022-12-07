@@ -10,6 +10,7 @@ const EditSkills = () =>{
         ['Math','Science','History','Accounting','Marketing','Finance','Coding','HTML','Spanish']
     )
     const [removeSkill, setRemoveSkill] = useState([])
+    const [nButtonClass, setNbuttonClass] = useState("nextButtongrey")
 
     const addSkill = (e) =>{
         setRemoveSkill([...removeSkill, e] )
@@ -25,6 +26,16 @@ const EditSkills = () =>{
     const addCustom= (skill)=>{
         setRemoveSkill([...removeSkill, skill] )
     }
+    useEffect(()=>{
+        console.log("useEffecting")
+        if(removeSkill.length >= 1){
+            setNbuttonClass("nextButton")
+        }else {
+            setNbuttonClass("nextButtongrey")
+
+        }
+
+    },[removeSkill])
 
     return (
     <div className="eSkills">
@@ -49,13 +60,16 @@ const EditSkills = () =>{
         </div>
         <div className="skills">
             <div className="skillsBox">{removeSkill.map((skil, i)=>(
-            
-            <div className="rSkill" key={i} name={skil}><div className="skill">{skil}</div><div className="lilminus" onClick={()=>remSkill(skil)}></div></div>
-            
-                        ))}
+                <div className="rSkill" key={i} name={skil}><div className="skill">{skil}</div><div className="lilminus" onClick={()=>remSkill(skil)}></div></div>
+                ))}
             </div>
         </div>
 
+        <div className="buttons">
+            <div className={nButtonClass}> <div className='nextText'>Next</div> </div>
+            <div className="skipButton"><div>Skip</div></div>
+        </div>
+        <div className="oldmember">Already a member? <div className="toLogin"> Login here</div></div>
 
 
     </div>

@@ -31,6 +31,8 @@
     margin-left: 8px;
     font-size: 1rem;
 }
+
+
 .skillsBox{
     display: flex;
     flex-wrap: wrap;
@@ -56,13 +58,9 @@
     width: 15px;
     height: 15px;
 }
+
 #topskill{
-}
-#topskill::after{
-    border-bottom:4px #3220be solid;
-    position: absolute;
-    content: "";
-    width: 100%;
+    height: 250px;
 }
 
 #topskill::after{
@@ -86,4 +84,37 @@
     background-position: center;
     width: 20px;
     height: 20px;
+}
+.nextButtongrey{
+    font-family: Mina-Bold;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 275px;
+    margin-top: 17px;
+    height: 45px;
+    background-color: #A9A9A9;
+    align-items: center;    
+    display: flex;
+    color:#7B7B7B;
+}
+.skipButton{
+    margin-top: 20px;
+    font-family: Mina-Bold;
+    color:#F69E45;
+}
+.buttons{
+    position: absolute;
+    top: 630.5px;
+    left: 57.5px;
+}
+.oldmember{
+    position: absolute;
+    top: 745px;
+    left: 71px;
+    color: #FFFFFF;
+}
+.toLogin{
+    color:#F69E45;
+    font-family: Mina-Bold;
+    display: inline;
 }
