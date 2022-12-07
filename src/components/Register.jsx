@@ -4,7 +4,10 @@ import React  from 'react'
 import DataContext from './DataContext'
 import '../style/register.css'
 
-const Register = () =>{
+const Register = (props) =>{
+
+    const navigate = useNavigate();
+
     const iState = {
         firstName:"",
         lastName:"",
@@ -40,6 +43,9 @@ const Register = () =>{
             }
 
             const newUser = await fetch("https://dsh-backend.fly.dev/auth/register", configs);
+            const parsedNewUser = await newUser.json();
+            await props.setCurrentUserState(parsedNewUser);
+            navigate("/editskills");
 
         } catch (err) {
             console.log(err);
