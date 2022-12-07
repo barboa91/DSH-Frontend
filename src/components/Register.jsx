@@ -6,9 +6,9 @@ import '../style/register.css'
 
 const Register = () =>{
     const iState = {
-        fName:"",
-        lName:"",
-        email:"",
+        firstName:"",
+        lastName:"",
+        username:"",
         password:"",
         confpass:"",
     }
@@ -25,10 +25,26 @@ const Register = () =>{
 
     const checkValid=()=>{
         //console.log("in check Valid",uInfo)
-        uInfo.confpass === uInfo.password && uInfo.fName.length && uInfo.lName.length && uInfo.email.length && uInfo.password.length && uInfo.confpass.length ? setValid(true) : setValid(false)
+        uInfo.confpass === uInfo.password && uInfo.firstName.length && uInfo.lastName.length && uInfo.username.length && uInfo.password.length && uInfo.confpass.length ? setValid(true) : setValid(false)
 
     }
 
+    const registerUser = async() => {
+        try {
+            const configs = {
+                method: "POST",
+                body: JSON.stringify(uInfo),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }
+
+            const newUser = await fetch("https://dsh-backend.fly.dev/auth/register", configs);
+
+        } catch (err) {
+            console.log(err);
+        }
+    }
 
     useEffect(()=>{
         // Check for bad password
@@ -55,14 +71,14 @@ const Register = () =>{
             <div className='aTitle'>SCHOLA</div>
         </div>
         <div className='genInfo'>
-            <input className='fName' name='fName' onChange={handleChange} value={uInfo.fName} placeholder="First Name"></input>
-            <input className='lName' name='lName' onChange={handleChange} value={uInfo.lName}placeholder="Last Name"></input>
-            <input className='email' name= 'email' onChange={handleChange} value={uInfo.email} placeholder="Username"></input>
+            <input className='fName' name='firstName' onChange={handleChange} value={uInfo.firstName} placeholder="First Name"></input>
+            <input className='lName' name='lastName' onChange={handleChange} value={uInfo.lastName}placeholder="Last Name"></input>
+            <input className='email' name= 'username' onChange={handleChange} value={uInfo.username} placeholder="Username"></input>
             <input className='regPass' type="password"name='password' onChange={handleChange} value={uInfo.password} placeholder="Password"></input>
             <input className={cPass} type="password" name='confpass' onChange={handleChange} value={uInfo.confPass} placeholder="Confirm Password"></input>
         </div>
         <div className="buttons">
-            <div className={nButtonClass}> <div className='nextText'>Next</div> </div>
+            <div className={nButtonClass} onClick={registerUser}> <div className='nextText'>Next</div> </div>
         </div>
         <div className="oldmember">Already a member? <div className="toLogin"> Login here</div></div>
 
