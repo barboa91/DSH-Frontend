@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-
 import "./App.css";
 import { useState, useEffect } from "react";
 import Login from "./components/Login.jsx";
@@ -8,13 +6,17 @@ import DataContext from "./components/DataContext";
 import { getUserToken, setUserToken, clearUserToken } from "./services/util";
 import Register from "./components/Register";
 import EditSkills from "./components/EditSkills";
+import BackgroundInfo from './pages/BackgroundInfo'
 import Landing from "./pages/Landing";
+
 
 const DB_URL = "https://dsh-backend.fly.dev";
 
 function App() {
   const [currentUser, setCurrentUser] = useState({});
   const [isAuthenticated, setIsAuthenicated] = useState(false);
+
+  console.log('current user ID: ', currentUser);
 
   const registerUser = async (data) => {
     try {
@@ -77,27 +79,35 @@ function App() {
 
   return (
     <div className="App">
-      <header className="My-header"></header>
-      <DataContext.Provider
-        value={{
-          DB_URL,
-          currentUser,
-          isAuthenticated,
-          registerUser,
-          logUser,
-          getUserToken,
-          clearUserToken,
-          setUserToken,
-          handleLogout,
-        }}>
-        <Router>
-          <Routes>
-            <Route exact path="/main" element={<Login />}></Route>
-            <Route exact path="/register" element={<Register />}></Route>
-            <Route exact path="/editskills" element={<EditSkills />}></Route>
-            <Route exact path="/landing" element={<Landing />}></Route>
-          </Routes>
-        </Router>
+
+      <header className="My-header">
+ 
+      </header>
+    <DataContext.Provider
+            value={{
+              DB_URL,
+              currentUser,
+              isAuthenticated,
+              registerUser,
+              logUser,
+              getUserToken,
+              clearUserToken,
+              setUserToken,
+              handleLogout,
+            }}>
+
+      <Router>
+        <Routes>
+          <Route exact path="/main" element={<Login/>}></Route>
+          <Route exact path="/register" element={<Register setCurrentUserState={setCurrentUser}/>}></Route>
+          <Route exact path="/editskills" element={<EditSkills currentUser={currentUser}/>}></Route>
+          <Route exact path='/backgroundinfo' element={<BackgroundInfo/>}></Route>
+          <Route exact path="/landing" element={<Landing />}></Route>
+
+
+        </Routes>
+      </Router >
+
       </DataContext.Provider>
     </div>
   );
