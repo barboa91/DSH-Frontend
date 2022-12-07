@@ -23,7 +23,7 @@ h4 {
   margin: 0 0 1em 1em;
 }
 
-.content-container {
+.recentcontent-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -31,7 +31,7 @@ h4 {
   width: 100%;
 }
 
-.title {
+.recentnotif-title {
   color: black;
   height: 2em;
   width: 100%;
@@ -43,13 +43,13 @@ h4 {
   margin: 0 0 0 1em;
 }
 
-.name-date {
+.recentnotif-name-date {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.buttons {
+.recentnotif-buttons {
   width: 10em;
   display: flex;
   flex-direction: row;
@@ -57,7 +57,7 @@ h4 {
   justify-content: space-between;
 }
 
-.buttons button {
+.recentnotif-buttons button {
   border-radius: 15px;
   width: 5em;
   height: 3em;
@@ -66,6 +66,6 @@ h4 {
   border: none;
 }
 
-.buttons a {
+.recentnotif-buttons a {
   margin-right: 1em;
 }
