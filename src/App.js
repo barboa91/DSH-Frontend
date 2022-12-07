@@ -18,6 +18,8 @@ function App() {
   const [currentUser, setCurrentUser] = useState({});
   const [isAuthenticated, setIsAuthenicated] = useState(false);
 
+  console.log('current user ID: ', currentUser);
+
   const registerUser = async (data) => {
     try {
       const configs = {
@@ -99,8 +101,8 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/main" element={<Login/>}></Route>
-          <Route exact path="/register" element={<Register/>}></Route>
-          <Route exact path="/editskills" element={<EditSkills/>}></Route>
+          <Route exact path="/register" element={<Register setCurrentUserState={setCurrentUser}/>}></Route>
+          <Route exact path="/editskills" element={<EditSkills currentUser={currentUser}/>}></Route>
           <Route exact path='/backgroundinfo' element={<BackgroundInfo/>}></Route>
 
 

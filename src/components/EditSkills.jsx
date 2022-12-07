@@ -2,8 +2,9 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import React from "react";
 import '../style/editskill.css'
+import DataContext from "./DataContext";
 
-const EditSkills = () =>{
+const EditSkills = (props) =>{
 
     const [custSkill, setCustSkill] = useState("")
     const [addskills, setSkills] = useState(
@@ -36,6 +37,30 @@ const EditSkills = () =>{
 
     },[removeSkill])
 
+    const { currentUser } = useContext(DataContext);
+    console.log(currentUser);
+
+    const addSkillToUser = async () => {
+        try {
+            const configs = {
+                method: "PUT",
+                body: JSON.stringify(removeSkill),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            }
+            
+            console.log(props.currentUser)
+
+            const newSkills = await fetch(`https://dsh-backend.fly.dev/user/${currentUser.user._id}/updateskills`, configs);
+
+
+            // "https://dsh-backend.fly.dev/auth/register"
+        } catch (err) {
+            console.log(err);
+        }
+    }
+
     return (
     <div className="eSkills">
         <div className='title'>
@@ -65,7 +90,7 @@ const EditSkills = () =>{
         </div>
 
         <div className="buttons">
-            <div className={nButtonClass}> <div className='nextText'>Next</div> </div>
+            <div className={nButtonClass} onClick={addSkillToUser}> <div className='nextText'>Next</div> </div>
             <div className="skipButton"><div>Skip</div></div>
         </div>
         <div className="oldmember">Already a member? <div className="toLogin"> Login here</div></div>
