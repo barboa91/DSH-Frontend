@@ -1,17 +1,66 @@
 ul {
   font-size: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 li > span {
   font-size: 10px;
+  padding: 0;
+  margin: 0;
 }
 
 p {
+  font-size: 10px;
+  margin: 0;
+}
+
+hr {
+  margin-top: 4px;
+  margin-bottom: 11px;
   color: #8b8b8b;
 }
 
+.circle {
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
+.time {
+  font-size: 10px;
+  color: #8b8b8b;
+  margin-right: 15px;
+}
+
+.pTime {
+  float: right;
+}
+
 .session-container {
+  width: 158.39px;
+  height: 241px;
   border: solid black 1px;
   border-radius: 10px;
   background-color: #d9d9d9d9;
 }
+
+.session-header {
+  color: black;
+  font-size: 12px;
+  margin-bottom: 29px;
+  margin-top: 17.5px;
+}
+
+.fakelist {
+  display: flex;
+  align-items: center;
+}
+
+/* 39px space between nav bar and date/sessions */
+/* 26px from left side of screen to date/sessions */
+/* 27px from right side of screen to date/sessions */
+/* 20px between date and sessions */

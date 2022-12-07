@@ -7,7 +7,6 @@ import DataContext from "./components/DataContext";
 import { getUserToken, setUserToken, clearUserToken } from "./services/util";
 import axios from "axios";
 import Register from "./components/Register";
-import LandingPage from "./components/LandingPage";
 import Landing from "./pages/Landing";
 // BrowserRouter as Router,
 
