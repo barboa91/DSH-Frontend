@@ -4,6 +4,7 @@ import TimeStatus from "../components/TimeStatus";
 import Sessions from "../components/Sessions";
 import "../style/landingpage.css";
 import RecentNotification from "../components/RecentNotification";
+import RecentConversation from "../components/RecentConversations";
 
 const Landing = () => {
   return (
@@ -20,6 +21,9 @@ const Landing = () => {
       </div>
       <div className="notifications">
         <RecentNotification />
+      </div>
+      <div className="conversations">
+        <RecentConversation />
       </div>
       <NavBar />
     </>
