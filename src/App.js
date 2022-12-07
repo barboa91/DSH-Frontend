@@ -1,20 +1,18 @@
-// import logo from './logo.svg';
-import './App.css';
-import { useState, useEffect } from 'react';
-import Login from './components/Login.jsx';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import DataContext from './components/DataContext';
-import { getUserToken, setUserToken, clearUserToken } from './services/util';
-import Register from './components/Register';
-import EditSkills from './components/EditSkills';
+import "./App.css";
+import { useState, useEffect } from "react";
+import Login from "./components/Login.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DataContext from "./components/DataContext";
+import { getUserToken, setUserToken, clearUserToken } from "./services/util";
+import Register from "./components/Register";
+import EditSkills from "./components/EditSkills";
 import BackgroundInfo from './pages/BackgroundInfo'
-// BrowserRouter as Router,
+import Landing from "./pages/Landing";
 
-const DB_URL = "https://dsh-backend.fly.dev"
 
+const DB_URL = "https://dsh-backend.fly.dev";
 
 function App() {
-
   const [currentUser, setCurrentUser] = useState({});
   const [isAuthenticated, setIsAuthenicated] = useState(false);
 
@@ -62,7 +60,7 @@ function App() {
       setUserToken(user.token);
       setCurrentUser(user.user);
       setIsAuthenicated(user.isLoggedIn);
-      console.log(user)
+      console.log(user);
 
       return user;
     } catch (error) {
@@ -79,9 +77,9 @@ function App() {
     setIsAuthenicated(false);
   };
 
-
   return (
     <div className="App">
+
       <header className="My-header">
  
       </header>
@@ -104,10 +102,12 @@ function App() {
           <Route exact path="/register" element={<Register setCurrentUserState={setCurrentUser}/>}></Route>
           <Route exact path="/editskills" element={<EditSkills currentUser={currentUser}/>}></Route>
           <Route exact path='/backgroundinfo' element={<BackgroundInfo/>}></Route>
+          <Route exact path="/landing" element={<Landing />}></Route>
 
 
         </Routes>
       </Router >
+
       </DataContext.Provider>
     </div>
   );

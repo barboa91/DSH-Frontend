@@ -1,7 +1,6 @@
-
 @font-face {
-    font-family: Mina;
-    src: url('../assets/Mina/Mina-Regular.ttf');
+  font-family: Mina;
+  src: url("../assets/Mina/Mina-Regular.ttf");
 }
 @font-face {
     font-family: Mina-Bold;
@@ -9,14 +8,10 @@
 }
 
 input {
-    text-align: left;
-    padding-left:20px;
-  }
-.title{
-    font-family: Mina;
-    margin-bottom: 60px;
-
+  text-align: left;
+  padding-left: 20px;
 }
+
 .wTitle{
     font-size: 32px;
     margin-bottom: 5px;
@@ -113,3 +108,4 @@ input {
     margin: 0 auto;
     text-align: center;
 }
+
