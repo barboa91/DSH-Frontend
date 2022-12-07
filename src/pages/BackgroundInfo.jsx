@@ -28,10 +28,14 @@ const BackgroundInfo = () =>{
             <input className='education' name='education' onChange={handleChange} value={bgInfo.education}placeholder="Degree"></input>
             <input className='licencepic' name= 'licencepic' onChange={handleChange} value={bgInfo.licencepic} placeholder="Upload Drivers Licence"></input>
             <input className='selfie' type="selfie"name='selfie' onChange={handleChange} value={bgInfo.selfie} placeholder="Selfie Photo Verification"></input>
-            <input className='city' name='city' onChange={handleChange} value={bgInfo.city} placeholder="Selfie Photo Verification"></input>            <input className='state' name='state' onChange={handleChange} value={bgInfo.state} placeholder="State"></input>
+            <input className='city' name='city' onChange={handleChange} value={bgInfo.city} placeholder="Selfie Photo Verification"></input>
+            <input className='state' name='state' onChange={handleChange} value={bgInfo.state} placeholder="State"></input>
 
         </div>
-        <div className='nextButton'><div className='nextText'>Next</div></div>
+        <div className="buttons">
+            <div className="changethis"> <div className='nextText'>Next</div> </div>
+            <div className="skipButton"><div>Skip</div></div>
+        </div>
     </div>
     )
 

@@ -27,7 +27,6 @@ const EditSkills = () =>{
         setRemoveSkill([...removeSkill, skill] )
     }
     useEffect(()=>{
-        console.log("useEffecting")
         if(removeSkill.length >= 1){
             setNbuttonClass("nextButton")
         }else {
