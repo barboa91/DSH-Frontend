@@ -8,12 +8,18 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
-  background-color: #878787;
+  background-color: #151515;
 }
 
 .nav-button {
   width: 55px;
   height: 55px;
   font-size: 10px;
-  border-radius: 50%;
+  background-color: #151515;
+  border: none;
+}
+
+.filter-orange {
+  filter: invert(81%) sepia(38%) saturate(3983%) hue-rotate(329deg)
+    brightness(105%) contrast(94%);
 }
