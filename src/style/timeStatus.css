@@ -1,6 +1,6 @@
 hr {
   width: 80%;
-  background-color: black;
+  background-color: #8b8b8b;
 }
 
 /* .timestatus-container {
@@ -11,16 +11,22 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 8em;
-  height: 12em;
-  padding: 1em;
-  background-color: #adadad;
+  width: 158.39px;
+  height: 241px;
+  background-color: #d9d9d9;
   border-radius: 10px;
 }
 
 .day {
+  margin-left: 12.75px;
+  font-size: 22px;
 }
 
 .date {
-  font-size: 3em;
+  font-size: 64px;
+  margin-left: 16px;
+}
+
+.month-year {
+  font-size: 16px;
 }

@@ -8,6 +8,7 @@ import DataContext from "./components/DataContext";
 import { getUserToken, setUserToken, clearUserToken } from "./services/util";
 import Register from "./components/Register";
 import EditSkills from "./components/EditSkills";
+import Landing from "./pages/Landing";
 
 const DB_URL = "https://dsh-backend.fly.dev";
 
