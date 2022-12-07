@@ -32,10 +32,10 @@ const RecentNotification = () => {
 
   return (
     <div className="recentnotif-container">
-      <div className="title">Session Requests</div>
-      <div className="content-container">
+      <div className="recentnotif-title">Session Requests</div>
+      <div className="recentcontent-container">
         <div className="notif-info">
-          <div className="name-date">
+          <div className="recentnotif-name-date">
             <h4>Jim Hopper</h4>
             <p>
               <u>Requests:</u>
@@ -45,7 +45,7 @@ const RecentNotification = () => {
             </p>
           </div>
         </div>
-        <div className="buttons">
+        <div className="recentnotif-buttons">
           <button>Confirm</button>
           <a>
             <u>Deny</u>
