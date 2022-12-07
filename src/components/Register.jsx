@@ -1,10 +1,15 @@
-import { useNavigate } from 'react-router-dom'
-import { useState, useEffect, useContext } from 'react'
-import React  from 'react'
-import DataContext from './DataContext'
-import '../style/register.css'
+import { useNavigate } from "react-router-dom";
+import { useState, useEffect, useContext } from "react";
+import React from "react";
+import DataContext from "./DataContext";
+import "../style/register.css";
+import NavBar from "./NavBar";
 
-const Register = () =>{
+
+const Register = (props) =>{
+
+    const navigate = useNavigate();
+
     const iState = {
         firstName:"",
         lastName:"",
@@ -40,6 +45,9 @@ const Register = () =>{
             }
 
             const newUser = await fetch("https://dsh-backend.fly.dev/auth/register", configs);
+            const parsedNewUser = await newUser.json();
+            await props.setCurrentUserState(parsedNewUser);
+            navigate("/editskills");
 
         } catch (err) {
             console.log(err);
@@ -85,4 +93,51 @@ const Register = () =>{
     </div>)
 }
 
-export default Register
+
+  return (
+    <div className="registerPage">
+      <div className="title">
+        <div className="wTitle">WELCOME TO</div>
+        <div className="aTitle">SCHOLA</div>
+      </div>
+      <div className="genInfo">
+        <input
+          className="fName"
+          name="fName"
+          onChange={handleChange}
+          value={uInfo.fName}
+          placeholder="First Name"></input>
+        <input
+          className="lName"
+          name="lName"
+          onChange={handleChange}
+          value={uInfo.lName}
+          placeholder="Last Name"></input>
+        <input
+          className="email"
+          name="email"
+          onChange={handleChange}
+          value={uInfo.email}
+          placeholder="e-Mail"></input>
+        <input
+          className="regPass"
+          type="password"
+          name="password"
+          onChange={handleChange}
+          value={uInfo.password}
+          placeholder="Password"></input>
+        <input
+          className={cPass}
+          type="password"
+          name="confpass"
+          onChange={handleChange}
+          value={uInfo.confPass}
+          placeholder="Confirm Password"></input>
+      </div>
+      <div className="nextButton">
+        <div className="nextText">Next</div>
+      </div>
+    </div>
+  );
+};
+export default Register;
