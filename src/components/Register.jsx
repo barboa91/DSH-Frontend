@@ -11,14 +11,23 @@ const Register = () => {
     lName: "",
     email: "",
     password: "",
-    confPass: "",
+    confpass: "",
   };
+  const [cPass, setCpass] = useState("confPass");
 
   const [uInfo, setuInfo] = useState(iState);
 
   const handleChange = (e) => {
     setuInfo({ ...uInfo, [e.target.name]: e.target.value });
   };
+  useEffect(() => {
+    // Check for bad password
+    if (uInfo.confpass === uInfo.password) {
+      setCpass("confPass");
+    } else {
+      setCpass("badConfPass");
+    }
+  }, [uInfo]);
 
   return (
     <div className="registerPage">
@@ -47,22 +56,23 @@ const Register = () => {
           placeholder="e-Mail"></input>
         <input
           className="regPass"
+          type="password"
           name="password"
           onChange={handleChange}
           value={uInfo.password}
           placeholder="Password"></input>
         <input
-          className="confPass"
-          name="city"
+          className={cPass}
+          type="password"
+          name="confpass"
           onChange={handleChange}
           value={uInfo.confPass}
           placeholder="Confirm Password"></input>
       </div>
-      <div className="nextButton">Next</div>
-
-      <NavBar />
+      <div className="nextButton">
+        <div className="nextText">Next</div>
+      </div>
     </div>
   );
 };
-
 export default Register;

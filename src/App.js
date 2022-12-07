@@ -1,15 +1,13 @@
 // import logo from './logo.svg';
+
 import "./App.css";
 import { useState, useEffect } from "react";
 import Login from "./components/Login.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DataContext from "./components/DataContext";
 import { getUserToken, setUserToken, clearUserToken } from "./services/util";
-import axios from "axios";
 import Register from "./components/Register";
-import LandingPage from "./components/LandingPage";
-import Landing from "./pages/Landing";
-// BrowserRouter as Router,
+import EditSkills from "./components/EditSkills";
 
 const DB_URL = "https://dsh-backend.fly.dev";
 
@@ -95,6 +93,7 @@ function App() {
           <Routes>
             <Route exact path="/main" element={<Login />}></Route>
             <Route exact path="/register" element={<Register />}></Route>
+            <Route exact path="/editskills" element={<EditSkills />}></Route>
             <Route exact path="/landing" element={<Landing />}></Route>
           </Routes>
         </Router>

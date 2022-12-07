@@ -20,6 +20,12 @@ input {
 }
 .aTitle {
   font-size: 64px;
+  font-weight: bold;
+  margin-top: -30px;
+  padding: 0;
+}
+.aTitle {
+  font-size: 64px;
   margin-top: -30px;
   padding: 0;
 }
@@ -88,4 +94,42 @@ input {
   text-align: center;
   vertical-align: middle;
   padding-top: 1rem;
+}
+.confPass {
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 275px;
+  height: 45px;
+  margin-bottom: 17px;
+  background-color: #d9d9d9;
+
+  margin-top: 17px;
+  box-sizing: border-box;
+}
+.badConfPass {
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 275px;
+  height: 45px;
+  margin-bottom: 17px;
+  background-color: #ff4949;
+  margin-top: 17px;
+  box-sizing: border-box;
+}
+.nextButton {
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 275px;
+  margin-top: 17px;
+  height: 45px;
+  background-color: #878787;
+  align-items: center;
+  display: flex;
+}
+.nextText {
+  margin: 0 auto;
+  text-align: center;
 }
