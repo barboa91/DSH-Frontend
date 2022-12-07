@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+<<<<<<< HEAD
 import "./App.css";
 import { useState, useEffect } from "react";
 import Login from "./components/Login.jsx";
@@ -8,6 +9,16 @@ import { getUserToken, setUserToken, clearUserToken } from "./services/util";
 import axios from "axios";
 import Register from "./components/Register";
 import Landing from "./pages/Landing";
+=======
+import './App.css';
+import { useState, useEffect } from 'react';
+import Login from './components/Login.jsx';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import DataContext from './components/DataContext';
+import { getUserToken, setUserToken, clearUserToken } from './services/util';
+import Register from './components/Register';
+import EditSkills from './components/EditSkills';
+>>>>>>> d88c526a4470985da30e3019877b3170518d02c0
 // BrowserRouter as Router,
 
 const DB_URL = "https://dsh-backend.fly.dev";
@@ -77,6 +88,7 @@ function App() {
 
   return (
     <div className="App">
+<<<<<<< HEAD
       <header className="My-header"></header>
       <DataContext.Provider
         value={{
@@ -97,6 +109,34 @@ function App() {
             <Route exact path="/landing" element={<Landing />}></Route>
           </Routes>
         </Router>
+=======
+      <header className="My-header">
+ 
+      </header>
+    <DataContext.Provider
+            value={{
+              DB_URL,
+              currentUser,
+              isAuthenticated,
+              registerUser,
+              logUser,
+              getUserToken,
+              clearUserToken,
+              setUserToken,
+              handleLogout,
+            }}>
+
+      <Router>
+        <Routes>
+          <Route exact path="/main" element={<Login/>}></Route>
+          <Route exact path="/register" element={<Register/>}></Route>
+          <Route exact path="/editskills" element={<EditSkills/>}></Route>
+
+
+
+        </Routes>
+      </Router >
+>>>>>>> d88c526a4470985da30e3019877b3170518d02c0
       </DataContext.Provider>
     </div>
   );
