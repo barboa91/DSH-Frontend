@@ -1,0 +1,33 @@
+.nSkill{
+    width: 100px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    
+}
+.skill{
+    margin-left: 8px;
+    font-size: 1rem;
+}
+.skillsBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 36px;
+    margin-left: 36px;
+}
+.lilcross{
+    display: block;
+    background: url('../assets/icons/smallCircleCross.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
