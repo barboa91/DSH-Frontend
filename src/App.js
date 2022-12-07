@@ -1,20 +1,19 @@
 // import logo from './logo.svg';
-import './App.css';
-import { useState, useEffect  } from 'react';
-import Login from './components/Login.jsx';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import DataContext from './components/DataContext';
-import { getUserToken, setUserToken, clearUserToken } from './services/util';
-import axios from 'axios';
-import Register from './components/Register';
-import LandingPage from './components/LandingPage';
+import "./App.css";
+import { useState, useEffect } from "react";
+import Login from "./components/Login.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DataContext from "./components/DataContext";
+import { getUserToken, setUserToken, clearUserToken } from "./services/util";
+import axios from "axios";
+import Register from "./components/Register";
+import LandingPage from "./components/LandingPage";
+import Landing from "./pages/Landing";
 // BrowserRouter as Router,
 
-const DB_URL = "https://dsh-backend.fly.dev"
-
+const DB_URL = "https://dsh-backend.fly.dev";
 
 function App() {
-
   const [currentUser, setCurrentUser] = useState({});
   const [isAuthenticated, setIsAuthenicated] = useState(false);
 
@@ -60,7 +59,7 @@ function App() {
       setUserToken(user.token);
       setCurrentUser(user.user);
       setIsAuthenicated(user.isLoggedIn);
-      console.log(user)
+      console.log(user);
 
       return user;
     } catch (error) {
@@ -77,34 +76,28 @@ function App() {
     setIsAuthenicated(false);
   };
 
-
   return (
     <div className="App">
-      <header className="My-header">
- 
-      </header>
-    <DataContext.Provider
-            value={{
-              DB_URL,
-              currentUser,
-              isAuthenticated,
-              registerUser,
-              logUser,
-              getUserToken,
-              clearUserToken,
-              setUserToken,
-              handleLogout,
-            }}>
-
-      <Router>
-        <Routes>
-          <Route exact path="/main" element={<Login/>}></Route>
-          <Route exact path="/register" element={<Register/>}></Route>
-          <Route exact path="/landing" element={<LandingPage />}></Route>
-
-
-        </Routes>
-      </Router >
+      <header className="My-header"></header>
+      <DataContext.Provider
+        value={{
+          DB_URL,
+          currentUser,
+          isAuthenticated,
+          registerUser,
+          logUser,
+          getUserToken,
+          clearUserToken,
+          setUserToken,
+          handleLogout,
+        }}>
+        <Router>
+          <Routes>
+            <Route exact path="/main" element={<Login />}></Route>
+            <Route exact path="/register" element={<Register />}></Route>
+            <Route exact path="/landing" element={<Landing />}></Route>
+          </Routes>
+        </Router>
       </DataContext.Provider>
     </div>
   );

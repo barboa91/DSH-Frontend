@@ -1,0 +1,17 @@
+ul {
+  font-size: 20px;
+}
+
+li > span {
+  font-size: 10px;
+}
+
+p {
+  color: #8b8b8b;
+}
+
+.session-container {
+  border: solid black 1px;
+  border-radius: 10px;
+  background-color: #d9d9d9d9;
+}
