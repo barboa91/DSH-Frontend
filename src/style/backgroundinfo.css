@@ -1,20 +1,132 @@
+*{
+    box-sizing: border-box;
+}
 .jTitle{
-    background-color: aqua;
+    margin: 0 auto;
+    margin-top:9px;
+    margin-bottom: 9px;
+    background-color: #FFE6C9;
+    width: 340px;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 15px;
      
 }
 .education{
-    background-color: aqua;
+    margin: 0 auto;
+    margin-top:9px;
+    margin-bottom: 9px;
+    background-color: #FFE6C9;
+    width: 340px;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 15px;
+}
+.degree{
+    margin: 0 auto;
+    margin-top:9px;
+    margin-bottom: 9px;
+    background-color: #FFE6C9;
+    width: 340px;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 15px;
+}
+.backgroundCheck{
+    margin: 0 auto;
+    margin-top:9px;
+    margin-bottom: 9px;
+    margin-top:9px;
+    margin-bottom: 9px;
+    border:1px solid #f69e45;
+    border-radius: 15px;
+    background-color: #474747;
+    color: #f4f4f4;
+    width: 340px;
+    height: 45px;
+
 
 }
+.pix{
+    margin: 0 auto;
+    margin-top:9px;
+    margin-bottom: 9px;
+    display: flex;
+    width: 340px;
+}
 .licencepic{
-    background-color: aqua;
+    margin: 0 auto;
+    margin-top:9px;
+    margin-bottom: 9px;
+    background-color: #FFE6C9;
+    width: 162px;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
 
 }
 .selfie{
-    background-color: aqua;
+    margin: 0 auto;
+    margin-top:9px;
+    margin-bottom: 9px;
+    background-color: #FFE6C9;
+    width: 162px;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 15px;
 
 }
+.location{
+    margin: 0 auto;
+    display: flex;
+    margin-top:9px;
+    margin-bottom: 9px;
+    width: 340px;
+}
 .city{
-    background-color: aqua;
+    margin: 0 auto;
+    background-color: #FFE6C9;
+    width: 208px;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 15px;
 
+}
+.state{
+    margin: 0 auto;
+    background-color: #FFE6C9;
+    width: 109px;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 15px;
+}
+.nextButtongrey{
+    font-family: Mina-Bold;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 275px;
+    margin-top: 17px;
+    height: 45px;
+    background-color: #A9A9A9;
+    align-items: center;    
+    display: flex;
+    color:#7B7B7B;
+}
+.skipButton{
+    margin-top: 20px;
+    font-family: Mina-Bold;
+    color:#F69E45;
+}
+.buttons{
+    position: absolute;
+    top: 630.5px;
+    left: 57.5px;
 }
