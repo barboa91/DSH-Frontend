@@ -69,3 +69,19 @@ h4 {
 .recentnotif-buttons a {
   margin-right: 1em;
 }
+
+.hide {
+  display: none;
+}
+.show {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-radius: 10px;
+  background-color: #ffe6c9;
+  width: 90%;
+  height: 100%;
+}
