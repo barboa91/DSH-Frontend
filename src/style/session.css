@@ -18,7 +18,8 @@ p {
 hr {
   margin-top: 4px;
   margin-bottom: 11px;
-  color: #8b8b8b;
+  border-color: #d9720b;
+  background-color: #d9720b;
 }
 
 .circle {
@@ -28,6 +29,7 @@ hr {
   border-radius: 50%;
   margin-left: 8px;
   margin-right: 5px;
+  background-color: #d9720b;
 }
 
 .time {
@@ -45,7 +47,7 @@ hr {
   height: 241px;
   border: solid black 1px;
   border-radius: 10px;
-  background-color: #d9d9d9d9;
+  background-color: #ffe6c9;
 }
 
 .session-header {

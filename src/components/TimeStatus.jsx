@@ -38,7 +38,7 @@ const TimeStatus = () => {
           {month} {d.getFullYear()}
         </div>
         <hr />
-        <div>Seattle, WA</div>
+        <div className="location">Seattle, WA</div>
         <hr />
       </div>
     </div>

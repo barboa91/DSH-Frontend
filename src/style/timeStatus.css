@@ -29,4 +29,9 @@ hr {
 
 .month-year {
   font-size: 16px;
+  padding-left: 0.5em;
+}
+
+.location {
+  padding-left: 0.5em;
 }
