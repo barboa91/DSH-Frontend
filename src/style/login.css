@@ -1,5 +1,12 @@
+*{
+    box-sizing: border-box;
+}
 .loginBox{
-    justify-content: center;
+    justify-content: space-between;
+}
+.loginImages{
+    display:flex;
+    justify-content: space-evenly;
 }
 .username{
     margin: 0 auto;
@@ -12,4 +19,93 @@
     border-radius: 15px;
     width: 275px;
     height: 45px;
+}
+.logTitle{
+    font-family: Mina-Bold;
+    font-size: 64px;
+    font-weight:bold;
+    margin-top:136px;
+    padding: 0;
+    color:#F69E45;
+
+}
+.nge{
+    color:#ffffff;
+}
+.loginUsername{
+    height: 45px;
+    width: 275px;
+    border: 1px solid black;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #FFE6C9;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.loginPassword{
+    height: 45px;
+    width: 275px;
+    border: 1px solid black;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #FFE6C9;
+   margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.way{
+    margin-bottom:15px;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+
+}
+.way:before, .way:after {
+    content: " ";
+    flex: 1 1;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    margin:auto;
+}
+.way:before{
+    margin-right: 40px;
+}
+.way:after{
+    margin-left: 40px;
+}
+.logButton{
+    border: 1px solid black;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 275px;
+    margin-top: 17px;
+    height: 45px;
+    background-color: #F69E45;
+    align-items: center;    
+    display: flex;
+    text-align: center;
+    color:black
+}
+.logButtongrey{
+    border: 1px solid black;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 275px;
+    margin-top: 17px;
+    height: 45px;
+    background-color: #A9A9A9;
+    align-items: center;    
+    display: flex;
+    color:#7B7B7B;
+    text-align: center;
+}
+.logText{
+    margin: 0 auto;
+    text-align: center;
+}
+.unpw{
+    color: #ffffff;
+    position:absolute;
+    bottom: 5px;
+    left: 75px;
 }

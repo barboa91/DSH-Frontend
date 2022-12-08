@@ -25,6 +25,9 @@ const EditSkills = (props) =>{
         setCustSkill(e.target.value)
     }
     const addCustom= (skill)=>{
+        if(skill.length <1){
+            return;
+        }
         setRemoveSkill([...removeSkill, skill] )
     }
     useEffect(()=>{

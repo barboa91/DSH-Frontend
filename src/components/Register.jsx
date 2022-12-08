@@ -28,12 +28,6 @@ const Register = (props) =>{
         setuInfo({ ...uInfo, [e.target.name]: e.target.value });
         checkValid()
     }
-
-    const checkValid=()=>{
-        //console.log("in check Valid",uInfo)
-        uInfo.confpass === uInfo.password && uInfo.firstName.length && uInfo.lastName.length && uInfo.username.length && uInfo.password.length && uInfo.confpass.length ? setValid(true) : setValid(false)
-    }
-
     const registerUser = async() => {
         try {
             const configs = {
@@ -50,6 +44,10 @@ const Register = (props) =>{
         } catch (err) {
             console.log(err);
         }
+    }
+    const checkValid=()=>{
+        //console.log("in check Valid",uInfo)
+        uInfo.confpass === uInfo.password && uInfo.firstName.length && uInfo.lastName.length && uInfo.username.length && uInfo.password.length && uInfo.confpass.length ? setValid(true) : setValid(false)
     }
 
     useEffect(()=>{

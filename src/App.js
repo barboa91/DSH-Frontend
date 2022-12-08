@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import Login from "./components/Login.jsx";
+import Login from "./pages/Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DataContext from "./components/DataContext";
 import { getUserToken, setUserToken, clearUserToken } from "./services/util";
