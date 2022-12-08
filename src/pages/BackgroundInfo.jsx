@@ -2,8 +2,10 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import React from "react";
 import "../style/backgroundinfo.css"
+import truth from '../assets/icons/truthfinder.svg'
 
 const BackgroundInfo = () =>{
+    const navigate = useNavigate()
 
     const iState = {
         jTitle:"",
@@ -42,9 +44,9 @@ const BackgroundInfo = () =>{
         <div className='genInfo'>
             <input className='jTitle' name='jTitle' onChange={handleChange} placeholder="Job title" value={bgInfo.jTitle}></input>
             <input className='education' name='education' onChange={handleChange} value={bgInfo.education}placeholder="School"></input>
-            <input className='degree' name='degree' onChange={handleChange} value={bgInfo.education}placeholder="Degree"></input>
+            <input className='degree' name='degree' onChange={handleChange} value={bgInfo.degree}placeholder="Degree"></input>
 
-            <div className="backgroundCheck"><div>Begin Background check through</div></div>
+            <div className="backgroundCheck"><div>Begin Background check through</div><img className="truthlogo" src={truth} alt="tf logo"/></div>
             <div className="pix">
                 <input className='licencepic' name= 'licencepic' onChange={handleChange} value={bgInfo.licencepic} placeholder="Upload Drivers Licence"></input>
                 <input className='selfie' type="selfie"name='selfie' onChange={handleChange} value={bgInfo.selfie} placeholder="Selfie Photo Verification"></input>
@@ -55,8 +57,8 @@ const BackgroundInfo = () =>{
             </div>
         </div>
         <div className="buttons">
-            <div className={nButtonClass}> <div className='nextText'>Get Started</div> </div>
-            <div className="skipButton"><div>Skip</div></div>
+            <div className={nButtonClass} onClick={()=>navigate('/landing')}> <div className='nextText'>Get Started</div> </div>
+            <div className="skipButton" onClick={()=>navigate('/landing')}><div >Skip</div></div>
         </div>
     </div>
     )

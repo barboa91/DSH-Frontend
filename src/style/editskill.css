@@ -16,6 +16,8 @@
     justify-content: space-between;
     display: flex;  
     background-color: #FFFFFF;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 .rSkill{
     width: 100px;
@@ -25,6 +27,8 @@
     border-radius: 8px;
     margin-bottom: 5px;
     margin-top: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
     align-items: center;
     justify-content: space-between;
     display: flex;  
@@ -38,9 +42,12 @@
 
 
 .skillsBox{
+    margin:0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-content: center;
+    margin:0 auto;
     margin-right: 36px;
     margin-left: 36px;
 }
@@ -77,9 +84,11 @@
     margin-left: 9%;
 }
 .cusSkill{
+    margin:0 auto;
     display: flex;
-    justify-content: center;
-    margin-bottom:20px
+    align-content: center;
+    margin-bottom:20px;
+    width: 310px;
 }
 #bigCross{
     display: block;
@@ -130,6 +139,7 @@
     border-radius: 15px 0px 0px 15px ;
     background-color: #FFE6C9;
     height: 45px;
+    width: 288px;
     border: 0px solid black;
     border-style:solid;
 }
