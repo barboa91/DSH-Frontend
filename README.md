@@ -42,7 +42,7 @@ hjw               ^--^---'--^---^-^--^--^---'--^---^-^-^-==-^--^---^-'
 10. [Future Goals](#futuregoals)
 11. [Support](#support)
 
-## [**_Live Site_**]()<a name="websitelink" ></a>
+## [**_Live Site_**](https://schola-dsh.netlify.app/)<a name="websitelink" ></a>
 
 ### [Fly.io Back-end Link](https://dsh-backend.fly.dev)
 
