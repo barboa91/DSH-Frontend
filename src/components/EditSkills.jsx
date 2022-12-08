@@ -1,14 +1,14 @@
-import { useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import React from "react";
 import '../style/editskill.css'
 import DataContext from "./DataContext";
 
 const EditSkills = (props) =>{
-
+    const navigate = useNavigate()
     const [custSkill, setCustSkill] = useState("")
     const [addskills, setSkills] = useState(
-        ['Math','Science','History','Accounting','Marketing','Finance','Coding','HTML','Spanish']
+        ['Math','Science','History','French','Marketing','Finance','Coding','HTML','Spanish']
     )
     const [removeSkill, setRemoveSkill] = useState([])
     const [nButtonClass, setNbuttonClass] = useState("nextButtongrey")
@@ -44,6 +44,10 @@ const EditSkills = (props) =>{
     console.log(currentUser);
 
     const addSkillToUser = async () => {
+        if(removeSkill.length < 1){
+            return
+        }
+
         try {
             const configs = {
                 method: "PUT",
@@ -57,10 +61,12 @@ const EditSkills = (props) =>{
 
             const newSkills = await fetch(`https://dsh-backend.fly.dev/user/${currentUser.user._id}/updateskills`, configs);
 
-
+            navigate('/backgroundinfo')
             // "https://dsh-backend.fly.dev/auth/register"
         } catch (err) {
             console.log(err);
+            navigate('/backgroundinfo')
+            
         }
     }
 
@@ -74,7 +80,7 @@ const EditSkills = (props) =>{
             
         <div id="skilltitle">Skillsets</div>
             <div className="cusSkill">
-                <input className="customSkill" name="custskill" onChange={handleChange} value={custSkill}></input>
+                <input className="customSkill" name="custskill" placeholder="Areas of expertise" onChange={handleChange} value={custSkill}></input>
                 <div id="bigCross" onClick={()=>addCustom(custSkill)}></div>
             </div>
             <div className="skillsBox">{addskills.map((skil, i)=>(
@@ -94,7 +100,7 @@ const EditSkills = (props) =>{
 
         <div className="buttons">
             <div className={nButtonClass} onClick={addSkillToUser}> <div className='nextText'>Next</div> </div>
-            <div className="skipButton"><div>Skip</div></div>
+            <div className="skipButton" onClick={()=>navigate('/landing')}><div>Skip</div></div>
         </div>
         <div className="oldmember">Already a member? <div className="toLogin"> Login here</div></div>
 
