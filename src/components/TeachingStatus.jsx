@@ -6,7 +6,7 @@ const DB_URL = "https://dsh-backend.fly.dev";
 
 const TeachingStatus = () => {
   //! ------------------------useContext---------------------------
-  const { currentUser } = useContext(Context);
+  const { currentUser } = useContext(DataContext);
 
   //! ------------------------useState---------------------------
   const [statData, setStatData] = useState();

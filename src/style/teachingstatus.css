@@ -1,5 +1,20 @@
 .teachingstat-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #ffe6c9;
+  width: 90%;
+  height: 100%;
+}
+
+.teachingstat-container h1 {
+  margin: 0;
 }
 
 .stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }

@@ -5,6 +5,7 @@ import Sessions from "../components/Sessions";
 import "../style/landingpage.css";
 import RecentNotification from "../components/RecentNotification";
 import RecentConversation from "../components/RecentConversations";
+import TeachingStatus from "../components/TeachingStatus";
 
 const Landing = () => {
   return (
@@ -25,6 +26,10 @@ const Landing = () => {
       <div className="conversations">
         <RecentConversation />
       </div>
+      <div className="teachingstatus">
+        <TeachingStatus />
+      </div>
+
       <NavBar />
     </>
   );
