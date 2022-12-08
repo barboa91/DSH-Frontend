@@ -8,7 +8,7 @@ import Register from "./components/Register";
 import EditSkills from "./components/EditSkills";
 import BackgroundInfo from './pages/BackgroundInfo'
 import Landing from "./pages/Landing";
-
+import Calendar from "./pages/Calendar";
 
 const DB_URL = "https://dsh-backend.fly.dev";
 
@@ -103,6 +103,7 @@ function App() {
           <Route exact path="/editskills" element={<EditSkills currentUser={currentUser}/>}></Route>
           <Route exact path='/backgroundinfo' element={<BackgroundInfo/>}></Route>
           <Route exact path="/landing" element={<Landing />}></Route>
+          <Route exact path="/calendar" element={<Calendar/>}></Route>
 
 
         </Routes>

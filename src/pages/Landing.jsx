@@ -6,8 +6,14 @@ import "../style/landingpage.css";
 import RecentNotification from "../components/RecentNotification";
 import RecentConversation from "../components/RecentConversations";
 import TeachingStatus from "../components/TeachingStatus";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
+
+
+  const navigate = useNavigate()
+
+
   return (
     <>
       <Header />
@@ -16,7 +22,7 @@ const Landing = () => {
         <div className="timestatus">
           <TimeStatus />
         </div>
-        <div className="sessions">
+        <div className="sessions" onClick={()=>{navigate('/calendar')}}>
           <Sessions />
         </div>
       </div>
