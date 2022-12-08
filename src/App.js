@@ -98,7 +98,7 @@ function App() {
 
       <Router>
         <Routes>
-          <Route exact path="/main" element={<Login/>}></Route>
+          <Route exact path="/" element={<Login/>}></Route>
           <Route exact path="/register" element={<Register setCurrentUserState={setCurrentUser}/>}></Route>
           <Route exact path="/editskills" element={<EditSkills currentUser={currentUser}/>}></Route>
           <Route exact path='/backgroundinfo' element={<BackgroundInfo/>}></Route>
