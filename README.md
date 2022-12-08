@@ -1,70 +1,196 @@
-# Getting Started with Create React App
+# Schola
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+```
 
-In the project directory, you can run:
+     ___           ___           ___           ___                         ___
+    /  /\         /  /\         /__/\         /  /\                       /  /\
+   /  /:/_       /  /:/         \  \:\       /  /::\                     /  /::\
+  /  /:/ /\     /  /:/           \__\:\     /  /:/\:\    ___     ___    /  /:/\:\
+ /  /:/ /::\   /  /:/  ___   ___ /  /::\   /  /:/  \:\  /__/\   /  /\  /  /:/~/::\
+/__/:/ /:/\:\ /__/:/  /  /\ /__/\  /:/\:\ /__/:/ \__\:\ \  \:\ /  /:/ /__/:/ /:/\:\
+\  \:\/:/~/:/ \  \:\ /  /:/ \  \:\/:/__\/ \  \:\ /  /:/  \  \:\  /:/  \  \:\/:/__\/
+ \  \::/ /:/   \  \:\  /:/   \  \::/       \  \:\  /:/    \  \:\/:/    \  \::/
+  \__\/ /:/     \  \:\/:/     \  \:\        \  \:\/:/      \  \::/      \  \:\
+    /__/:/       \  \::/       \  \:\        \  \::/        \__\/        \  \:\
+    \__\/         \__\/         \__\/         \__\/                       \__\/
 
-### `npm start`
+                         .--.           .---.        .-.
+                     .---|--|   .-.     | A |  .---. |~|    .--.
+                  .--|===|Ch|---|_|--.__| S |--|:::| |~|-==-|==|---.
+                  |%%|NT2|oc|===| |~~|%%| C |--|   |_|~|CATS|  |___|-.
+                  |  |   |ah|===| |==|  | I |  |:::|=| |    |GB|---|=|
+                  |  |   |ol|   |_|__|  | I |__|   | | |    |  |___| |
+                  |~~|===|--|===|~|~~|%%|~~~|--|:::|=|~|----|==|---|=|
+hjw               ^--^---'--^---^-^--^--^---'--^---^-^-^-==-^--^---^-'
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. [Website Links](#websitelink)
+2. [Project Description](#projectdescription)
+3. [Goals and Stretch Features](#goalsandstretchfeatures)
+4. [Wireframes](#wireframe)
+5. [Example Pictures](#examplepictures)
+6. [Tech Stack](#techstack)
+7. [Designing Challenges](#designingchallenges)
+8. [Coding Challenges](#codingchallenges)
+9. [Summary](#summary)
+10. [Future Goals](#futuregoals)
+11. [Support](#support)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## [**_Live Site_**]()<a name="websitelink"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### [Heroku Back-end Link](https://dsh-backend.fly.dev)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### [Link to Front-end Repo](https://github.com/barboa91/DSH-Frontend)<a name="websitelink"></a>
 
-### `npm run eject`
+### [Link to Back-end Repo](https://github.com/SeanBu/DSH-Backend)<a name="websitelink"></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Description:<a name="projectdescription"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+For General Assembly's 2022 Winter Hackathon, Schola is our theme of giving back with education accessibility to students who want to get connected with a tutor and learn school and/or life topics. With the real effects of education lose and the difficulties of expenses with having a private tutor, Schola is an opportunity to provide education to those disadvantaged. We also hope to provide tutors a way to easily schedule and teach a topic that the student will help in. Schola is similar to apps like **wyzant**, **kadama** or **preply**. However, we provide a way for students to match on location without paywalls towards our students or our tutors. Schola is a MERN app which allows students and tutors to sign up with user authentication, full CRUD capabilities in creating courses, reviews and user profile descriptions. This project was a 3-day sprint with team of 6 (3 designers and 3 developers) and we hope to provide more functionality for tutors and students in the near future.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Here is also a link to our designer's presentation! [**_Link_**](https://www.figma.com/file/nFI1DhxCiijfUR88SyRpAH/Hackathon-2022---Group-4?node-id=132%3A2968&t=ylxox9QAUCqO9kWu-0)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Goals and Stretch Features:<a name="goalsandstretchfeatures"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### MVP Goals:
 
-### Code Splitting
+- Use MongoDB as a database
+- CRUD functionality
+- MERN app with at least 3 models (users, reviews)
+- Create a focused product with a clear objective of the "Giving Back" theme
+- Craft thoughtful user stories with mid-fidelity wireframes
+- Error handling and useful feedback
+- Impressive/Professional looking
+- Deployed project (heroku and netlify)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Stretch Goals:
 
-### Analyzing the Bundle Size
+- Calendar functionality for scheduling
+- Detail tutor profile pages
+- Notification system
+- Message app for tutors and students
+- Geo-location for in-person public meeting location
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Wireframe:<a name="wireframe"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Front-end Wireframe:**
 
-### Advanced Configuration
+- [Lo-Fi Figma Link](https://www.figma.com/file/nFI1DhxCiijfUR88SyRpAH/Hackathon-2022---Group-4?node-id=0%3A1&t=K0crYVu4Ez8q5I5j-0)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [Mid-Fi Figma Link](https://www.figma.com/file/nFI1DhxCiijfUR88SyRpAH/Hackathon-2022---Group-4?node-id=58%3A1762&t=bXeJ8k5iQNVw46Pk-0)
 
-### Deployment
+- [User-Flow Figjam Link](https://www.figma.com/file/JA1xqHaIHt2tRapWzkJRLQ/Hackathon-2022---Group-4?node-id=0%3A1&t=lgtXqVOFshtTnSUu-0)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Back-end Wireframe:**
 
-### `npm run build` fails to minify
+- [ERD Miro Link](https://miro.com/app/board/uXjVP81afK4=/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Example Site Pictures:<a name="examplepictures"></a>.
+
+---
+
+## Tech Stack:<a name="techstack"></a>
+
+### **_Node.js and Express.js:_**
+
+- Our Back-end was built using Node.js as the environment with Express as the web application framework.
+
+### **_React.js:_**
+
+- React was used to create our Front-end pages and components.
+
+### **_Mongoose and MongoDB:_**
+
+- MongoDB was used as our Back-end database to hold information such as users, comments, usergroups, and player info. We were able to navigate this using the Mongoose interface.
+
+### **_Postman:_**
+
+- Postman was used to test our controllers, routes and ensure that they were properly functioning.
+
+### **_Vanilla HTML, CSS and JavaScript:_**
+
+- Vanilla HTML, CSS and JavaScript was used to build, style and provide functionality to our components and pages
+
+---
+
+## Designing Challenges:<a name="designingchallenges"></a>
+
+---
+
+## Coding Challenges:<a name="codingchallenges"></a>
+
+### Back-end Challenges:
+
+```javascript
+router.put("/:id/updateskills", async (req, res) => {
+  try {
+    const updateUserSkills = await User.updateOne(
+      { _id: req.params.id },
+      {
+        $push: { skills: req.body.skills },
+      }
+    );
+    res.status(201).send("Successful!");
+  } catch (error) {
+    console.log(error);
+    res.status(400).json({ error: error });
+  }
+});
+```
+
+Adding updated skills to our tutor's skills in our database was challenging. We had to make sure the specific data type was matching to the proper routes being received. We wanted to make sure that the current skills were updated and not deleted.
+
+### Front-end Challenges:
+
+```javascript
+
+```
+
+**Alex's response**
+
+---
+
+## Summary:<a name="summary"></a>
+
+Overall, we as a team had a great time building this application for GA's 2022 Winter Hackathon to keep us thinking as designers and developers in giving back to those in need during the holiday season. This was an incredible experience for both of our designers and developers to learn what it is like to work together as a team in building an a real-world and necessary education accessibility application
+
+## Future Goals:<a name="futuregoals"></a>
+
+- Complete our stretch goals
+- Establish like buttons and best comment system
+- Better style the website
+- Add another model for users to record climbing training workouts
+- Add video for users to record video
+
+---
+
+## Contributors:
+
+- [Olivia Shin](https://www.linkedin.com/in/olivia-s0718/) - Designer - [Portfolio]()
+- [Mark Lind](https://www.linkedin.com/in/davidelilind/) - Designer - [Portfolio]()
+- [Alex Hernandez](https://www.linkedin.com/in/alexmvp/) - Designer - [Portfolio]()
+- [Alex Barbosa](https://www.linkedin.com/in/alex-barbosa1/) - Developer - [Portfolio]()
+- [Sean Buchas](https://www.linkedin.com/in/seanbuchas/) - Developer - [Portfolio](https://seanbuchas.com/)
+- [Ian McBee](https://www.linkedin.com/in/ian-mcbee/) - Developer - [Portfolio](http://www.ianmcbee.com/)
+
+## Support:
+
+Please feel free to contact us on Linkedin to message us. Thanks!
