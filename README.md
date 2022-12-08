@@ -91,7 +91,7 @@ Here is also a link to our designer's presentation! [**_Link_**](https://www.fig
 
 - [ERD Miro Link](https://miro.com/app/board/uXjVP81afK4=/)
 
-## Example Site Pictures:<a name="examplepictures"></a>.
+## Example Site Pictures:<a name="examplepictures"></a>
 
 ## Tech Stack:<a name="techstack"></a>
 
@@ -164,7 +164,7 @@ Overall, we as a team had a great time building this application for GA's 2022 W
 
 - [Olivia Shin](https://www.linkedin.com/in/olivia-s0718/) - Designer - [Portfolio](https://www.uxoshin.com/)
 - [David Lind](https://www.linkedin.com/in/davidelilind/) - Designer - [Portfolio](http://uxdavidlind.com)
-- [Alex Hernandez](https://www.linkedin.com/in/alexmvp/) - Designer - [Portfolio](alexmvp.squarespace.com)
+- [Alex Hernandez](https://www.linkedin.com/in/alexmvp/) - Designer - [Portfolio](http://www.alexmvp.squarespace.com)
 - [Alex Barbosa](https://www.linkedin.com/in/alex-barbosa1/) - Developer - [Portfolio](alex-barbosa.com)
 - [Sean Buchas](https://www.linkedin.com/in/seanbuchas/) - Developer - [Portfolio](https://seanbuchas.com/)
 - [Ian McBee](https://www.linkedin.com/in/ian-mcbee/) - Developer - [Portfolio](http://www.ianmcbee.com/)
