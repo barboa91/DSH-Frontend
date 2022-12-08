@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .title{
         color:#F69E45
 }
@@ -75,6 +79,7 @@
 .cusSkill{
     display: flex;
     justify-content: center;
+    margin-bottom:20px
 }
 #bigCross{
     display: block;
@@ -117,4 +122,22 @@
     color:#F69E45;
     font-family: Mina-Bold;
     display: inline;
+}
+#skilltitle{
+    color:#F69E45;
+}
+.customSkill{
+    border-radius: 15px 0px 0px 15px ;
+    background-color: #FFE6C9;
+    height: 45px;
+    border: 0px solid black;
+    border-style:solid;
+}
+#bigCross{
+    margin-left: 0px;
+    border: 0px;
+    border-radius: 0px 15px 15px 0px ;
+    height: 45px;
+    width: 40px;
+    background-color: #FFE6C9;
 }
