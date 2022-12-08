@@ -117,6 +117,16 @@ Here is also a link to our designer's presentation! [**_Link_**](https://www.fig
 
 ## Designing Challenges:<a name="designingchallenges"></a>
 
+### Landing Page Design:
+
+**picture here**
+
+Our biggest challenge was figuring out a productive landing page that would add functionality to the product. Deciding on the content was challenging because it isn’t a social media app with following/follower activity that could be displayed on a feed. So we instead took it in the direction of adding convenience and took inspiration from Apple's widgets to display the most important information on the landing page without the user having to tap into various pages to find what they need.
+
+**picture here**
+
+Another challenge was deciding when exactly the user would identify themselves as a tutor or student during the onboarding process. We first opted to have them identify themselves as a student or tutor when first opening the app, but decided against that as it would be redundant for the user to identify themselves every time the app was refreshed, or they were logged out. To avoid this, we opted to move this step into the initial registration flow where the user would only be asked to identify themselves once when making their account.
+
 ## Coding Challenges:<a name="codingchallenges"></a>
 
 ### Back-end Challenges:
