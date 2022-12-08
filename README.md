@@ -48,7 +48,7 @@ hjw               ^--^---'--^---^-^--^--^---'--^---^-^-^-==-^--^---^-'
 
 ## [**_Live Site_**]()<a name="websitelink"></a>
 
-### [Heroku Back-end Link](https://dsh-backend.fly.dev)
+### [Fly.io Back-end Link](https://dsh-backend.fly.dev)
 
 ### [Link to Front-end Repo](https://github.com/barboa91/DSH-Frontend)<a name="websitelink"></a>
 
@@ -170,15 +170,14 @@ Adding updated skills to our tutor's skills in our database was challenging. We 
 
 ## Summary:<a name="summary"></a>
 
-Overall, we as a team had a great time building this application for GA's 2022 Winter Hackathon to keep us thinking as designers and developers in giving back to those in need during the holiday season. This was an incredible experience for both of our designers and developers to learn what it is like to work together as a team in building an a real-world and necessary education accessibility application
+Overall, we as a team had a great time building this application for GA's 2022 Winter Hackathon to keep us thinking as designers and developers in giving back to those in need during the holiday season. This was an incredible experience for both of our designers and developers to learn what it is like to work together as a team in building a real-world and necessary education accessibility application. We are all excited to keep working on this in the near future and we hope to further add more capabilities in our future goals.
 
 ## Future Goals:<a name="futuregoals"></a>
 
 - Complete our stretch goals
-- Establish like buttons and best comment system
-- Better style the website
-- Add another model for users to record climbing training workouts
-- Add video for users to record video
+- Further develop student profiles
+- Develop for both phone and desktop devices
+- Perform further research in user experience
 
 ---
 
