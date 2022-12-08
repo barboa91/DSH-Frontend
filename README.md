@@ -138,15 +138,46 @@ router.put("/:id/updateskills", async (req, res) => {
 });
 ```
 
-Adding updated skills to our tutor's skills in our database was challenging. We had to make sure the specific data type was matching to the proper routes being received. We wanted to make sure that the current skills were updated and not deleted.
+Adding updated skills to our tutor's skills in our database was challenging. We had to make sure the specific data type was matching to the proper routes being received. We wanted to make sure that the current skills were updated and not deleted. - Sean Buchas & Ian McBee
 
 ### Front-end Challenges:
 
 ```javascript
+const [custSkill, setCustSkill] = useState("");
+const [addskills, setSkills] = useState([
+  "Math",
+  "Science",
+  "History",
+  "Accounting",
+  "Marketing",
+  "Finance",
+  "Coding",
+  "HTML",
+  "Spanish",
+]);
+const [removeSkill, setRemoveSkill] = useState([]);
+const [nButtonClass, setNbuttonClass] = useState("nextButtongrey");
 
+const addSkill = (e) => {
+  setRemoveSkill([...removeSkill, e]);
+  setSkills((current) => current.filter((skill) => skill !== e));
+};
+const remSkill = (e) => {
+  setSkills([...addskills, e]);
+  setRemoveSkill((current) => current.filter((skill) => skill !== e));
+};
+const handleChange = (e) => {
+  setCustSkill(e.target.value);
+};
+const addCustom = (skill) => {
+  if (skill.length < 1) {
+    return;
+  }
+  setRemoveSkill([...removeSkill, skill]);
+};
 ```
 
-**Alex's response**
+This snippet of code was a little bit difficult for me due to the some state management issues I had. What it does is add skills to a list and moves them back and forth between an array. It also has the ability to add a new skill. - Alex Barbosa
 
 ## Summary:<a name="summary"></a>
 
