@@ -28,8 +28,6 @@ hjw               ^--^---'--^---^-^--^--^---'--^---^-^-^-==-^--^---^-'
 
 ---
 
----
-
 ## Table of Contents
 
 1. [Website Links](#websitelink)
@@ -44,25 +42,19 @@ hjw               ^--^---'--^---^-^--^--^---'--^---^-^-^-==-^--^---^-'
 10. [Future Goals](#futuregoals)
 11. [Support](#support)
 
----
-
-## [**_Live Site_**]()<a name="websitelink"></a>
+## [**_Live Site_**]()<a name="websitelink" ></a>
 
 ### [Fly.io Back-end Link](https://dsh-backend.fly.dev)
 
-### [Link to Front-end Repo](https://github.com/barboa91/DSH-Frontend)<a name="websitelink"></a>
+### [Link to Front-end Repo](https://github.com/barboa91/DSH-Frontend)
 
-### [Link to Back-end Repo](https://github.com/SeanBu/DSH-Backend)<a name="websitelink"></a>
-
----
+### [Link to Back-end Repo](https://github.com/SeanBu/DSH-Backend)
 
 ## Project Description:<a name="projectdescription"></a>
 
 For General Assembly's 2022 Winter Hackathon, Schola is our theme of giving back with education accessibility to students who want to get connected with a tutor and learn school and/or life topics. With the real effects of education lose and the difficulties of expenses with having a private tutor, Schola is an opportunity to provide education to those disadvantaged. We also hope to provide tutors a way to easily schedule and teach a topic that the student will help in. Schola is similar to apps like **wyzant**, **kadama** or **preply**. However, we provide a way for students to match on location without paywalls towards our students or our tutors. Schola is a MERN app which allows students and tutors to sign up with user authentication, full CRUD capabilities in creating courses, reviews and user profile descriptions. This project was a 3-day sprint with team of 6 (3 designers and 3 developers) and we hope to provide more functionality for tutors and students in the near future.
 
 Here is also a link to our designer's presentation! [**_Link_**](https://www.figma.com/file/nFI1DhxCiijfUR88SyRpAH/Hackathon-2022---Group-4?node-id=132%3A2968&t=ylxox9QAUCqO9kWu-0)
-
----
 
 ## Goals and Stretch Features:<a name="goalsandstretchfeatures"></a>
 
@@ -75,7 +67,7 @@ Here is also a link to our designer's presentation! [**_Link_**](https://www.fig
 - Craft thoughtful user stories with mid-fidelity wireframes
 - Error handling and useful feedback
 - Impressive/Professional looking
-- Deployed project (heroku and netlify)
+- Deployed project (fly.io and netlify)
 
 ### Stretch Goals:
 
@@ -84,8 +76,6 @@ Here is also a link to our designer's presentation! [**_Link_**](https://www.fig
 - Notification system
 - Message app for tutors and students
 - Geo-location for in-person public meeting location
-
----
 
 ## Wireframe:<a name="wireframe"></a>
 
@@ -101,11 +91,7 @@ Here is also a link to our designer's presentation! [**_Link_**](https://www.fig
 
 - [ERD Miro Link](https://miro.com/app/board/uXjVP81afK4=/)
 
----
-
 ## Example Site Pictures:<a name="examplepictures"></a>.
-
----
 
 ## Tech Stack:<a name="techstack"></a>
 
@@ -119,7 +105,7 @@ Here is also a link to our designer's presentation! [**_Link_**](https://www.fig
 
 ### **_Mongoose and MongoDB:_**
 
-- MongoDB was used as our Back-end database to hold information such as users, comments, usergroups, and player info. We were able to navigate this using the Mongoose interface.
+- MongoDB was used as our Back-end database to hold information such as users, auth, reviews, and course info. We were able to navigate this using the Mongoose interface.
 
 ### **_Postman:_**
 
@@ -129,11 +115,7 @@ Here is also a link to our designer's presentation! [**_Link_**](https://www.fig
 
 - Vanilla HTML, CSS and JavaScript was used to build, style and provide functionality to our components and pages
 
----
-
 ## Designing Challenges:<a name="designingchallenges"></a>
-
----
 
 ## Coding Challenges:<a name="codingchallenges"></a>
 
@@ -166,8 +148,6 @@ Adding updated skills to our tutor's skills in our database was challenging. We 
 
 **Alex's response**
 
----
-
 ## Summary:<a name="summary"></a>
 
 Overall, we as a team had a great time building this application for GA's 2022 Winter Hackathon to keep us thinking as designers and developers in giving back to those in need during the holiday season. This was an incredible experience for both of our designers and developers to learn what it is like to work together as a team in building a real-world and necessary education accessibility application. We are all excited to keep working on this in the near future and we hope to further add more capabilities in our future goals.
@@ -178,15 +158,14 @@ Overall, we as a team had a great time building this application for GA's 2022 W
 - Further develop student profiles
 - Develop for both phone and desktop devices
 - Perform further research in user experience
-
----
+- Perform useability testing
 
 ## Contributors:
 
-- [Olivia Shin](https://www.linkedin.com/in/olivia-s0718/) - Designer - [Portfolio]()
-- [Mark Lind](https://www.linkedin.com/in/davidelilind/) - Designer - [Portfolio]()
-- [Alex Hernandez](https://www.linkedin.com/in/alexmvp/) - Designer - [Portfolio]()
-- [Alex Barbosa](https://www.linkedin.com/in/alex-barbosa1/) - Developer - [Portfolio]()
+- [Olivia Shin](https://www.linkedin.com/in/olivia-s0718/) - Designer - [Portfolio](https://www.uxoshin.com/)
+- [David Lind](https://www.linkedin.com/in/davidelilind/) - Designer - [Portfolio](http://uxdavidlind.com)
+- [Alex Hernandez](https://www.linkedin.com/in/alexmvp/) - Designer - [Portfolio](alexmvp.squarespace.com)
+- [Alex Barbosa](https://www.linkedin.com/in/alex-barbosa1/) - Developer - [Portfolio](alex-barbosa.com)
 - [Sean Buchas](https://www.linkedin.com/in/seanbuchas/) - Developer - [Portfolio](https://seanbuchas.com/)
 - [Ian McBee](https://www.linkedin.com/in/ian-mcbee/) - Developer - [Portfolio](http://www.ianmcbee.com/)
 
