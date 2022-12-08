@@ -2,7 +2,7 @@
 
 ---
 
-```
+```python
 
      ___           ___           ___           ___                         ___
     /  /\         /  /\         /__/\         /  /\                       /  /\
@@ -93,6 +93,14 @@ Here is also a link to our designer's presentation! [**_Link_**](https://www.fig
 
 ## Example Site Pictures:<a name="examplepictures"></a>
 
+Register Page              |  Landing Page
+:-------------------------:|:-------------------------:
+![Screen Shot 2022-12-08 at 12 02 15 PM](https://user-images.githubusercontent.com/107007458/206535375-274c3fd5-42ff-488c-bad8-ebbadeb893ce.png)  |  ![Screenshot 2022-12-08 at 11 59 37 AM](https://user-images.githubusercontent.com/107007458/206535262-a8ae9c6b-ee2c-488e-9a33-c59dd767730c.png)
+
+
+
+
+
 ## Tech Stack:<a name="techstack"></a>
 
 ### **_Node.js and Express.js:_**
@@ -119,11 +127,14 @@ Here is also a link to our designer's presentation! [**_Link_**](https://www.fig
 
 ### Landing Page Design:
 
-**picture here**
+![IMG_0181](https://user-images.githubusercontent.com/107007458/206535960-c02ddc40-476d-4c2c-ae5a-2c33ba3b8297.jpg)
 
 Our biggest challenge was figuring out a productive landing page that would add functionality to the product. Deciding on the content was challenging because it isn’t a social media app with following/follower activity that could be displayed on a feed. So we instead took it in the direction of adding convenience and took inspiration from Apple's widgets to display the most important information on the landing page without the user having to tap into various pages to find what they need.
 
-**picture here**
+Landing Mid-Fi            |  Landing Hi-Fi
+:-------------------------:|:-------------------------:
+![Landing midfi](https://user-images.githubusercontent.com/107007458/206536150-78320f96-af5f-4cdb-9378-951b3f2f6bae.png)  |  ![Landing hifi](https://user-images.githubusercontent.com/107007458/206536239-8da4d026-802b-4585-b3ff-b275b8695ef2.png)
+
 
 Another challenge was deciding when exactly the user would identify themselves as a tutor or student during the onboarding process. We first opted to have them identify themselves as a student or tutor when first opening the app, but decided against that as it would be redundant for the user to identify themselves every time the app was refreshed, or they were logged out. To avoid this, we opted to move this step into the initial registration flow where the user would only be asked to identify themselves once when making their account.
 
