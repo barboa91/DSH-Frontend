@@ -6,6 +6,10 @@
     font-family: Mina-Bold;
     src: url('../assets/Mina/Mina-Bold.ttf');
 }
+@font-face{
+    font-family: Poppins;
+    src: url('../assets/Poppins/Poppins-Black.ttf')
+}
 
 input {
   text-align: left;
@@ -107,5 +111,38 @@ input {
 .nextText{
     margin: 0 auto;
     text-align: center;
+}
+.startTitle{
+    margin-top: 263px;
+    color:#F69E45;
+}
+.nge{
+    color:#ffffff;
+}
+
+.way{
+    margin-bottom:15px;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+
+}
+.way:before, .way:after {
+    content: " ";
+    flex: 1 1;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    margin:auto;
+}
+.way:before{
+    margin-right: 40px;
+}
+.way:after{
+    margin-left: 40px;
+}
+.ima{
+    font-family:'Poppins';
+    color:#F69E45;
+    font-size: 24px;
+    margin-top: 140px;
 }
 

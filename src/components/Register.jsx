@@ -21,17 +21,17 @@ const Register = (props) =>{
     const [uInfo, setuInfo] = useState(iState)
     const [nButtonClass, setNbuttonClass] = useState("nextButtongrey")
     const [valid, setValid]  = useState(false)
+
+    const [teacherButton, setTeacherButton] = useState(false)
+
     const handleChange = (e) => {
         setuInfo({ ...uInfo, [e.target.name]: e.target.value });
         checkValid()
-
-        // e.target.value.length < 1 ? setValid(false) : setValid(true) 
     }
 
     const checkValid=()=>{
         //console.log("in check Valid",uInfo)
         uInfo.confpass === uInfo.password && uInfo.firstName.length && uInfo.lastName.length && uInfo.username.length && uInfo.password.length && uInfo.confpass.length ? setValid(true) : setValid(false)
-
     }
 
     const registerUser = async() => {
@@ -43,12 +43,10 @@ const Register = (props) =>{
                     "Content-Type": "application/json"
                 }
             }
-
             const newUser = await fetch("https://dsh-backend.fly.dev/auth/register", configs);
             const parsedNewUser = await newUser.json();
             await props.setCurrentUserState(parsedNewUser);
             navigate("/editskills");
-
         } catch (err) {
             console.log(err);
         }
@@ -73,7 +71,13 @@ const Register = (props) =>{
     },[uInfo,valid])
 
     return(
+
     <div className='registerPage'>
+
+        {teacherButton ? 
+
+
+        <div>
         <div className='title'>
             <div className='wTitle'>WELCOME TO</div>
             <div className='aTitle'>SCHOLA</div>
@@ -89,6 +93,27 @@ const Register = (props) =>{
             <div className={nButtonClass} onClick={registerUser}> <div className='nextText'>Next</div> </div>
         </div>
         <div className="oldmember">Already a member? <div className="toLogin"> Login here</div></div>
+        </div>
+        :
+
+        // Teacher or student Choice to get to the next page
+        <div>
+        <div className='startTitle'>
+            <div className='wTitle'>WELCOME TO</div>
+            <div className='aTitle'>SCHOLA</div>
+        </div>
+        <div className="nge">Next Gen Education</div>
+        <div className="way">Who are you?</div>
+        <div className="ima">I am a...</div>
+        <div className="buttons">
+        <div className="nextButton"><div className="nextText" onClick={()=>{setTeacherButton(true)}}>Student</div></div>
+        <div className="nextButton"><div className="nextText" onClick={()=>{setTeacherButton(true)}} >Teacher</div></div>
+        </div>
+ 
+
+
+        </div>
+        }
 
     </div>)
 }
